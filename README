@@ -1,15 +1,3 @@
-json-cdc
-========
-
-A fork for Java ME CDC.
-
-* Compiles for 1.5.
-* RetroTranslated to 1.3.
-* Codes using `String#split` has been rewritten.
-
-
---------------------------------------------------------------------------------
-
 JSON in Java [package org.json]
 
 Douglas Crockford
