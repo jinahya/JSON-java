@@ -3,8 +3,8 @@ json-cdc
 
 a fork for Java ME/CDC.
 
-* compile Target: 1.5
-* retrotranslate Target: 1.3
+* compile target: 1.5
+* retrotranslate target: 1.3
 * codes using `String#split` has been rewritten.
 
 please read [README](README) for original description and license information.
