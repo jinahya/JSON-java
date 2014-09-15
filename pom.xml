@@ -14,7 +14,14 @@
     <version>9</version>
   </parent>
   <dependencyManagement />
-  <dependencies />
+  <dependencies>
+    <dependency>
+      <groupId>net.sf.retrotranslator</groupId>
+      <artifactId>retrotranslator-runtime13</artifactId>
+      <version>1.2.9</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
