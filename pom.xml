@@ -92,6 +92,8 @@
         <configuration>
           <server>github</server>
           <message>creating site for ${project.version}</message>
+          <repositoryOwner>jinahya</repositoryOwner>
+          <repositoryName>json-cdc</repositoryName>
           <path>site/${project.version}</path>
           <merge>true</merge>
         </configuration>
