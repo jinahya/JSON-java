@@ -300,7 +300,7 @@ public class Kim {
      *
      * @param obj
      *            the other kim with which to compare.
-     * @returns true if this and obj are both kim objects containing identical
+     * @return true if this and obj are both kim objects containing identical
      *          byte sequences.
      */
     public boolean equals(Object obj) {
