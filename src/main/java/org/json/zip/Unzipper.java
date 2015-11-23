@@ -159,7 +159,10 @@ public class Unzipper extends JSONzip {
         while (true) {
             if (at >= allocation) {
                 allocation *= 2;
-                bytes = java.util.Arrays.copyOf(bytes, allocation);
+                //bytes = java.util.Arrays.copyOf(bytes, allocation);
+                final byte[] b = new byte[allocation];
+                System.arraycopy(bytes, 0, b, 0, bytes.length);
+                bytes = b;
             }
             int c = huff.read(this.bitreader);
             if (c == end) {
