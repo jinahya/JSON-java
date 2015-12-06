@@ -12,7 +12,7 @@
 
   <groupId>com.github.jinahya</groupId>
   <artifactId>json-cdc</artifactId>
-  <version>1.1-SNAPSHOT</version>
+  <version>20151123-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>${project.artifactId}</name>
@@ -139,6 +139,34 @@
             <version>1.2.9</version>
           </dependency>
         </dependencies>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>retrotranslated13</id>
+            <phase>package</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <configuration>
+              <classesDirectory>${project.build.outputDirectory.retrotranslated13}</classesDirectory>
+              <classifier>retrotranslated13</classifier>
+            </configuration>
+          </execution>
+          <execution>
+            <id>retrotranslated14</id>
+            <phase>package</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <configuration>
+              <classesDirectory>${project.build.outputDirectory.retrotranslated14}</classesDirectory>
+              <classifier>retrotranslated14</classifier>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
