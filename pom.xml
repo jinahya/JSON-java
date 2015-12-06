@@ -47,6 +47,7 @@
     <maven.compiler.target>1.6</maven.compiler.target>
     <project.build.outputDirectory.retrotranslated13>${project.build.directory}/classes-retrotranslated13</project.build.outputDirectory.retrotranslated13>
     <project.build.outputDirectory.retrotranslated14>${project.build.directory}/classes-retrotranslated14</project.build.outputDirectory.retrotranslated14>
+    <additionalparam>-Xdoclint:none</additionalparam>
   </properties>
 
   <build>
