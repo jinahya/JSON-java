@@ -1,18 +1,8 @@
-json-cdc
+json-retrotranslated
 ========
-
-a fork for Java ME/CDC.
-
-* compile target: 1.5
-* retrotranslate target: 1.3
-* codes using `String#split` has been rewritten.
-
-please read [README](README) for original description and license information.
 
 versions
 --------
 |version|site|apidocs|note|
 |-------|----|-------|----|
-|1.1-SNAPSHOT|[jinahya.github.io](http://jinahya.github.io/json-cdc/sites/1.1-SNAPSHOT/index.html)|[jinahya.github.io](http://jinahya.github.io/json-cdc/sites/1.1-SNAPSHOT/apidocs/index.html)||
-|1.0|[jinahya.github.io](http://jinahya.github.io/json-cdc/sites/1.0/index.html)|[jinahya.github.io](http://jinahya.github.io/json-cdc/sites/1.0/apidocs/index.html)||
-|0.9|[jinahya.github.io](http://jinahya.github.io/json-cdc/site/0.9/index.html)|[jinahya.github.io](http://jinahya.github.io/json-cdc/site/0.9/apidocs/index.html)||
+|20151123|[jinahya.github.io](http://jinahya.github.io/json-retrotranslated/sites/20151123/index.html)|[jinahya.github.io](http://jinahya.github.io/json-retrotranslated/sites/20151123/apidocs/index.html)||
