@@ -11,13 +11,13 @@
   </parent>
 
   <groupId>com.github.jinahya</groupId>
-  <artifactId>json-cdc</artifactId>
+  <artifactId>json-retrotranslated</artifactId>
   <version>20151123-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>${project.artifactId}</name>
   <description>json for cdc</description>
-  <url>http://jinahya.github.io/json-cdc/site/${project.version}</url>
+  <url>https://github.com/jinahya/${project.artifactId}</url>
   <inceptionYear>2014</inceptionYear>
   <licenses>
     <license>
