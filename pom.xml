@@ -1,30 +1,54 @@
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <!-- The Basics -->
+  <parent>
+    <groupId>com.github.jinahya</groupId>
+    <artifactId>jinahya-parent</artifactId>
+    <version>0.6</version>
+  </parent>
+
   <groupId>com.github.jinahya</groupId>
   <artifactId>json-cdc</artifactId>
   <version>1.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <parent>
-    <groupId>com.github.jinahya</groupId>
-    <artifactId>ossrh-parent</artifactId>
-    <version>0.2</version>
-  </parent>
-  <dependencyManagement />
-  <dependencies/>
+
+  <name>${project.artifactId}</name>
+  <description>json for cdc</description>
+  <url>http://jinahya.github.io/json-cdc/site/${project.version}</url>
+  <inceptionYear>2014</inceptionYear>
+  <licenses>
+    <license>
+      <name>Douglas Crockford &lt;douglas@crockford.com&gt;</name>
+      <url>https://github.com/douglascrockford/JSON-java</url>
+      <comments>The software shall be used for good, not evil.</comments>
+    </license>
+  </licenses>
+
+  <prerequisites>
+    <maven>3.0.9</maven>
+  </prerequisites>
+
+  <scm>
+    <connection>scm:git:git@github.com:jinahya/${project.artifactId}.git</connection>
+    <developerConnection>scm:git:git@github.com:jinahya/${project.artifactId}.git</developerConnection>
+    <url>https://github.com/jinahya/${project.artifactId}</url>
+    <tag>1.1.2</tag>
+  </scm>
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>https://github.com/jinahya/${project.artifactId}/issues</url>
+  </issueManagement>
+
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
     <project.build.outputDirectory.retrotranslated13>${project.build.directory}/classes-retrotranslated13</project.build.outputDirectory.retrotranslated13>
     <project.build.outputDirectory.retrotranslated14>${project.build.directory}/classes-retrotranslated14</project.build.outputDirectory.retrotranslated14>
   </properties>
 
-  <!-- Build Settings -->
   <build>
     <pluginManagement>
       <plugins>
@@ -35,18 +59,8 @@
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-gpg-plugin</artifactId>
-          <version>1.6</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
           <version>2.6</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-javadoc-plugin</artifactId>
-          <version>2.10.3</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -76,25 +90,6 @@
       </plugins>
     </pluginManagement>
     <plugins>
-      <plugin>
-        <groupId>com.github.github</groupId>
-        <artifactId>site-maven-plugin</artifactId>
-        <version>0.12</version>
-        <configuration>
-          <server>github</server>
-          <message>creating site for ${project.version}</message>
-          <path>sites/${project.version}</path>
-          <merge>true</merge>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>site</goal>
-            </goals>
-            <!--phase>site</phase-->
-          </execution>
-        </executions>
-      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
@@ -146,16 +141,6 @@
         </dependencies>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-release-plugin</artifactId>
-        <version>2.5.3</version>
-        <configuration>
-          <tagNameFormat>@{project.version}</tagNameFormat>
-          <pushChanges>false</pushChanges>
-          <localCheckout>true</localCheckout>
-        </configuration>
-      </plugin>
-      <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>animal-sniffer-maven-plugin</artifactId>
         <executions>
@@ -191,6 +176,7 @@
       </plugin>
     </plugins>
   </build>
+
   <reporting>
     <plugins>
       <plugin>
@@ -205,6 +191,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>versions-maven-plugin</artifactId>
+        <version>2.2</version>
         <reportSets>
           <reportSet>
             <reports>
@@ -217,53 +204,4 @@
       </plugin>
     </plugins>
   </reporting>
-
-  <!-- More Project Information -->
-  <name>${project.artifactId}</name>
-  <description>json for cdc</description>
-  <url>http://jinahya.github.io/json-cdc/site/${project.version}</url>
-  <inceptionYear>2014</inceptionYear>
-  <licenses>
-    <license>
-      <name>Douglas Crockford &lt;douglas@crockford.com&gt;</name>
-      <url>https://github.com/douglascrockford/JSON-java</url>
-      <comments>The software shall be used for good, not evil.</comments>
-    </license>
-    <license>
-      <name>Apache 2</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-      <distribution>repo</distribution>
-      <comments>A business-friendly OSS license</comments>
-    </license>
-  </licenses>
-  <organization />
-  <developers>
-    <developer>
-      <id>jinahya</id>
-      <name>Jin Kwon</name>
-      <email>jinahya@gmail.com</email>
-    </developer>
-  </developers>
-  <contributors />
-
-  <!-- Environment Settings -->
-  <issueManagement>
-    <system>GitHub Issues</system>
-    <url>https://github.com/jinahya/${project.artifactId}/issues</url>
-  </issueManagement>
-  <ciManagement />
-  <mailingLists />
-  <scm>
-    <connection>scm:git:git@github.com:jinahya/${project.artifactId}.git</connection>
-    <developerConnection>scm:git:git@github.com:jinahya/${project.artifactId}.git</developerConnection>
-    <url>https://github.com/jinahya/${project.artifactId}</url>
-    <tag>1.1.2</tag>
-  </scm>
-  <prerequisites>
-    <maven>3.0.1</maven>
-  </prerequisites>
-  <repositories />
-  <pluginRepositories />
-  <distributionManagement/>
-  <profiles/>
 </project>

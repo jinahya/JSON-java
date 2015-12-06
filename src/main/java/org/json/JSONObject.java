@@ -92,7 +92,7 @@ import java.util.Set;
  * </ul>
  *
  * @author JSON.org
- * @version 2015-12-05
+ * @version 2015-10-29
  */
 public class JSONObject {
     /**
@@ -165,6 +165,10 @@ public class JSONObject {
      *            A JSONObject.
      * @param names
      *            An array of strings.
+     * @throws JSONException
+     * @exception JSONException
+     *                If a value is a non-finite number or if a name is
+     *                duplicated.
      */
     public JSONObject(JSONObject jo, String[] names) {
         this();
@@ -237,6 +241,7 @@ public class JSONObject {
      * @param map
      *            A map object that can be used to initialize the contents of
      *            the JSONObject.
+     * @throws JSONException
      */
     public JSONObject(Map<?, ?> map) {
         this.map = new HashMap<String, Object>();
