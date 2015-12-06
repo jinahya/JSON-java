@@ -10,7 +10,7 @@
 
   <groupId>com.github.jinahya</groupId>
   <artifactId>json-retrotranslated</artifactId>
-  <version>20151123</version>
+  <version>20151124-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>${project.artifactId}</name>
@@ -33,7 +33,7 @@
     <connection>scm:git:git@github.com:jinahya/${project.artifactId}.git</connection>
     <developerConnection>scm:git:git@github.com:jinahya/${project.artifactId}.git</developerConnection>
     <url>https://github.com/jinahya/${project.artifactId}</url>
-    <tag>20151123</tag>
+    <tag>1.1.2</tag>
   </scm>
   <issueManagement>
     <system>GitHub Issues</system>
