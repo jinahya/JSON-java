@@ -92,7 +92,7 @@ import java.util.Set;
  * </ul>
  *
  * @author JSON.org
- * @version 2015-12-05
+ * @version 2015-10-29
  */
 public class JSONObject {
     /**
@@ -344,12 +344,7 @@ public class JSONObject {
 // segment except the last. Add the value using the last segment's name into
 // the deepest nested JSONObject.
 
-                //String[] path = ((String) key).split("\\.");
-                final java.util.StringTokenizer t = new java.util.StringTokenizer((String) key, ".");
-                final String[] path = new String[t.countTokens()];
-                for (int i = 0; t.hasMoreTokens(); i++) {
-                    path[i] = t.nextToken();
-                }
+                String[] path = ((String) key).split("\\.");
                 int last = path.length - 1;
                 JSONObject target = this;
                 for (int i = 0; i < last; i += 1) {
@@ -905,7 +900,9 @@ public class JSONObject {
                 return myE;
             }
             return Enum.valueOf(clazz, val.toString());
-        } catch (IllegalArgumentException | NullPointerException e) {
+        } catch (IllegalArgumentException iae) {
+            return defaultValue;
+        } catch (NullPointerException npe) {
             return defaultValue;
         }
     }
