@@ -10,14 +10,14 @@
 |20151123|[jinahya.github.io](http://jinahya.github.io/json-retrotranslated/sites/20151123/index.html)|[jinahya.github.io](http://jinahya.github.io/json-retrotranslated/sites/20151123/apidocs/index.html)||
 ## dependencies
 ```xml
+<!-- for JRE 1.3 -->
 <dependency>
   <gropuId>com.github.jinahya</groupId>
   <artifactId>json-retrotranslated</artifactId>
   <version>20151123</version>
   <classifier>retrotranslated13</classifier>
 </dependency>
-```
-```xml
+<!-- for JRE 1.4 -->
 <dependency>
   <gropuId>com.github.jinahya</groupId>
   <artifactId>json-retrotranslated</artifactId>
