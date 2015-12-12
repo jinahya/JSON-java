@@ -10,6 +10,12 @@
 |20151123|[jinahya.github.io](http://jinahya.github.io/json-retrotranslated/sites/20151123/index.html)|[jinahya.github.io](http://jinahya.github.io/json-retrotranslated/sites/20151123/apidocs/index.html)|[upstream:JSON-Java/20151123](https://github.com/douglascrockford/JSON-java/tree/20151123)|
 ## dependencies
 ```xml
+<!-- for JRE 1.6+ -->
+<dependency>
+  <gropuId>com.github.jinahya</groupId>
+  <artifactId>json-retrotranslated</artifactId>
+  <version>20151123</version>
+</dependency>
 <!-- for JRE 1.3 -->
 <dependency>
   <gropuId>com.github.jinahya</groupId>
