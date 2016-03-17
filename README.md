@@ -7,6 +7,7 @@
 ## versions
 |version|site|apidocs|note|
 |-------|----|-------|----|
+|20160212|[jinahya.github.io](http://jinahya.github.io/json-retrotranslated/sites/20160212/index.html)|[javadoc.io](http://www.javadoc.io/doc/com.github.jinahya/json-retrotranslated/20160212)||
 |20151123|[jinahya.github.io](http://jinahya.github.io/json-retrotranslated/sites/20151123/index.html)|[jinahya.github.io](http://jinahya.github.io/json-retrotranslated/sites/20151123/apidocs/index.html)|[upstream:JSON-Java/20151123](https://github.com/douglascrockford/JSON-java/tree/20151123)|
 ## dependencies
 ```xml
@@ -14,20 +15,20 @@
 <dependency>
   <gropuId>com.github.jinahya</groupId>
   <artifactId>json-retrotranslated</artifactId>
-  <version>20151123</version>
+  <version>20160212</version>
 </dependency>
 <!-- for JRE 1.3 -->
 <dependency>
   <gropuId>com.github.jinahya</groupId>
   <artifactId>json-retrotranslated</artifactId>
-  <version>20151123</version>
+  <version>20160212</version>
   <classifier>retrotranslated13</classifier>
 </dependency>
 <!-- for JRE 1.4 -->
 <dependency>
   <gropuId>com.github.jinahya</groupId>
   <artifactId>json-retrotranslated</artifactId>
-  <version>20151123</version>
+  <version>20160212</version>
   <classifier>retrotranslated14</classifier>
 </dependency>
 ```
