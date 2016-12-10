@@ -7,16 +7,17 @@
 Generates classfied artifacts for JRE 1.3 and JRE 1.4 of [JSON-java](https://github.com/stleary/JSON-java) using [Retrotranslator](http://retrotranslator.sourceforge.net/) .
 
 ## versions
-|version|site|apidocs|note|
-|-------|----|-------|----|
-|20160212|[jinahya.github.io](http://jinahya.github.io/json-retrotranslated/sites/20160212/index.html)|[javadoc.io](http://www.javadoc.io/doc/com.github.jinahya/json-retrotranslated/20160212)||
-|20151123|[jinahya.github.io](http://jinahya.github.io/json-retrotranslated/sites/20151123/index.html)|[jinahya.github.io](http://jinahya.github.io/json-retrotranslated/sites/20151123/apidocs/index.html)|[upstream:JSON-Java/20151123](https://github.com/douglascrockford/JSON-java/tree/20151123)|
+|version|apidocs|note|
+|-------|-------|----|
+|20151123|[javadoc.io](http://www.javadoc.io/doc/com.github.jinahya/json-retrotranslated/20160810)|[upstream:JSON-Java/20160810](https://github.com/stleary/JSON-java/tree/20160810)|
+|20160212|[javadoc.io](http://www.javadoc.io/doc/com.github.jinahya/json-retrotranslated/20160212)|[upstream:JSON-Java/20160212](https://github.com/stleary/JSON-java/tree/20160212)|
+|20151123|[javadoc.io](http://www.javadoc.io/doc/com.github.jinahya/json-retrotranslated/20151123)||
 
 ## usages
 ### JRE 1.3
 ```xml
 <dependency>
-  <gropuId>com.github.jinahya</groupId>
+  <groupId>com.github.jinahya</groupId>
   <artifactId>json-retrotranslated</artifactId>
   <classifier>retrotranslated13</classifier>
 </dependency>
@@ -24,7 +25,7 @@ Generates classfied artifacts for JRE 1.3 and JRE 1.4 of [JSON-java](https://git
 ### JRE 1.4
 ```xml
 <dependency>
-  <gropuId>com.github.jinahya</groupId>
+  <groupId>com.github.jinahya</groupId>
   <artifactId>json-retrotranslated</artifactId>
   <classifier>retrotranslated14</classifier>
 </dependency>
