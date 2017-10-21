@@ -10,7 +10,7 @@
 
   <groupId>com.github.jinahya</groupId>
   <artifactId>json-retrotranslated</artifactId>
-  <version>20171018</version>
+  <version>20171018.NEXE-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>${project.artifactId}</name>
