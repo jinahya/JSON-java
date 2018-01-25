@@ -4,9 +4,9 @@
 [![Maven Central](https://img.shields.io/maven-central/v/com.github.jinahya/json-retrotranslated.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.github.jinahya%22%20a%3A%22json-retrotranslated%22)
 [![Javadocs](http://javadoc.io/badge/com.github.jinahya/json-retrotranslated.svg)](http://javadoc.io/doc/com.github.jinahya/json-retrotranslated)
 
-Generates classfied artifacts for JRE 1.3 and JRE 1.4 of [JSON-java](https://github.com/stleary/JSON-java) using [Retrotranslator](http://retrotranslator.sourceforge.net/) .
+Generates [Retrotranslated](http://retrotranslator.sourceforge.net/) artifacts of [JSON-java](https://github.com/stleary/JSON-java) for JRE 1.3 and JRE 1.4.
 
-## jre 1.3
+## JRE 1.3
 ```xml
 <dependency>
   <groupId>com.github.jinahya</groupId>
@@ -15,7 +15,7 @@ Generates classfied artifacts for JRE 1.3 and JRE 1.4 of [JSON-java](https://git
 </dependency>
 ```
 
-## jre 1.4
+## JRE 1.4
 
 ```xml
 <dependency>
