@@ -6,13 +6,6 @@
 
 Generates classfied artifacts for JRE 1.3 and JRE 1.4 of [JSON-java](https://github.com/stleary/JSON-java) using [Retrotranslator](http://retrotranslator.sourceforge.net/) .
 
-## versions
-|version|apidocs|note|
-|-------|-------|----|
-|20160810|[javadoc.io](http://www.javadoc.io/doc/com.github.jinahya/json-retrotranslated/20160810)|[upstream:JSON-Java/20160810](https://github.com/stleary/JSON-java/tree/20160810)|
-|20160212|[javadoc.io](http://www.javadoc.io/doc/com.github.jinahya/json-retrotranslated/20160212)|[upstream:JSON-Java/20160212](https://github.com/stleary/JSON-java/tree/20160212)|
-|20151123|[javadoc.io](http://www.javadoc.io/doc/com.github.jinahya/json-retrotranslated/20151123)||
-
 ## usages
 
 ### JRE 1.3
