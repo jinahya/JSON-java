@@ -10,7 +10,7 @@
 
   <groupId>com.github.jinahya</groupId>
   <artifactId>json-java-retrotranslated</artifactId>
-  <version>20171018.NEXE-SNAPSHOT</version>
+  <version>20180130</version>
   <packaging>jar</packaging>
 
   <name>${project.artifactId}</name>
@@ -21,6 +21,7 @@
     <connection>scm:git:git@github.com:jinahya/${project.artifactId}.git</connection>
     <developerConnection>scm:git:git@github.com:jinahya/${project.artifactId}.git</developerConnection>
     <url>https://github.com/jinahya/${project.artifactId}</url>
+    <tag>20180130</tag>
   </scm>
   <issueManagement>
     <system>GitHub Issues</system>
