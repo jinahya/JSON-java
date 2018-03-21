@@ -4,9 +4,19 @@
 [![Maven Central](https://img.shields.io/maven-central/v/com.github.jinahya/json-retrotranslated.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.github.jinahya%22%20a%3A%22json-retrotranslated%22)
 [![Javadocs](http://javadoc.io/badge/com.github.jinahya/json-retrotranslated.svg)](http://javadoc.io/doc/com.github.jinahya/json-retrotranslated)
 
-Generates [retrotranslated](http://retrotranslator.sourceforge.net/) artifacts of [JSON-java](https://github.com/stleary/JSON-java) for JRE 1.3 and JRE 1.4.
+Generates classfied artifacts for JRE 1.3 and JRE 1.4 of [JSON-java](https://github.com/stleary/JSON-java) using [Retrotranslator](http://retrotranslator.sourceforge.net/) .
 
-## JRE 1.3
+## versions
+|version|apidocs|note|
+|-------|-------|----|
+|20160810|[javadoc.io](http://www.javadoc.io/doc/com.github.jinahya/json-retrotranslated/20160810)|[upstream:JSON-Java/20160810](https://github.com/stleary/JSON-java/tree/20160810)|
+|20160212|[javadoc.io](http://www.javadoc.io/doc/com.github.jinahya/json-retrotranslated/20160212)|[upstream:JSON-Java/20160212](https://github.com/stleary/JSON-java/tree/20160212)|
+|20151123|[javadoc.io](http://www.javadoc.io/doc/com.github.jinahya/json-retrotranslated/20151123)||
+
+## usages
+
+### JRE 1.3
+
 ```xml
 <dependency>
   <groupId>com.github.jinahya</groupId>
@@ -15,7 +25,7 @@ Generates [retrotranslated](http://retrotranslator.sourceforge.net/) artifacts o
 </dependency>
 ```
 
-## JRE 1.4
+### JRE 1.4
 
 ```xml
 <dependency>
