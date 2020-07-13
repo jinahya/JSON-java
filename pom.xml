@@ -8,9 +8,8 @@
     <version>0.8.5</version>
   </parent>
 
-  <groupId>com.github.jinahya</groupId>
   <artifactId>json-retrotranslated</artifactId>
-  <version>20190722-SNAPSHOT</version>
+  <version>20190722</version>
   <packaging>jar</packaging>
 
   <name>${project.artifactId}</name>
