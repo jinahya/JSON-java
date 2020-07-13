@@ -5,12 +5,12 @@
   <parent>
     <groupId>com.github.jinahya</groupId>
     <artifactId>jinahya-parent</artifactId>
-    <version>0.7.7</version>
+    <version>0.8.5</version>
   </parent>
 
   <groupId>com.github.jinahya</groupId>
   <artifactId>json-retrotranslated</artifactId>
-  <version>20171018.NEXE-SNAPSHOT</version>
+  <version>20190722-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>${project.artifactId}</name>
@@ -29,7 +29,7 @@
 
   <properties>
     <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
+    <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
     <project.build.outputDirectory.retrotranslated13>${project.build.directory}/classes-retrotranslated13</project.build.outputDirectory.retrotranslated13>
     <project.build.outputDirectory.retrotranslated14>${project.build.directory}/classes-retrotranslated14</project.build.outputDirectory.retrotranslated14>
     <additionalparam>-Xdoclint:none</additionalparam>
@@ -41,7 +41,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.7.0</version>
+          <version>3.8.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -51,7 +51,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.20.1</version>
+          <version>2.22.2</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -109,7 +109,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.0.2</version>
+        <version>3.2.0</version>
         <executions>
           <execution>
             <id>retrotranslated13</id>
@@ -138,7 +138,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>animal-sniffer-maven-plugin</artifactId>
-        <version>1.16</version>
+        <version>1.18</version>
         <executions>
           <execution>
             <id>check-java16</id>
