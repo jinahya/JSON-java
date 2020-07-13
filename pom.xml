@@ -9,7 +9,7 @@
   </parent>
 
   <artifactId>json-retrotranslated</artifactId>
-  <version>20190722</version>
+  <version>20200518-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>${project.artifactId}</name>
