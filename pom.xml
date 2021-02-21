@@ -35,6 +35,7 @@
   </properties>
 
   <build>
+    <sourceDirectory>${project.basedir}/subtree/20201115/src/main/java</sourceDirectory>
     <pluginManagement>
       <plugins>
         <plugin>
